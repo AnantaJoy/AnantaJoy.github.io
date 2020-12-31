@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icon page -->
+    <link rel="shortcut icon" href="icon2.png">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>New Year 2021</title>
+</head>
+<body>
+    <div id="year" class="year"></div>
+
+    <h1 style="color:#388BFC;">Happy New</h1> <br>
+    <h1 style="color:#DA3633;">Year 2021</h1>
+
+    <div id="countdown" class="countdown">
+      <div class="time">
+        <h2 id="days">00</h2>
+        <small style="color:#00FF99;">Days</small>
+      </div>
+      <div class="time">
+        <h2 id="hours">00</h2>
+        <small style="color:#00FF99;">Hours</small>
+      </div>
+      <div class="time">
+        <h2 id="minutes">00</h2>
+        <small style="color:#00FF99;">Minutes</small>
+      </div>
+      <div class="time">
+        <h2 id="seconds">00</h2>
+        <small style="color:#00FF99;">Seconds</small>
+      </div>
+    </div>
+  
+    <button onclick="play()" type="button" class="button" style="color: #388BFC;">Touch Here!!</button>
+    <audio id="audio" src="new_year.m4a" ></audio>
+    <img
+      src="spinner.gif"
+      alt="Carregando..."
+      id="loading"
+      
+    />
+
+ <script src="main.js"></script>
+ <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+
+</body>
+</html>
